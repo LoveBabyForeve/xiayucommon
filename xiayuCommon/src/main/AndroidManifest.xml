@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiayule.commonlibrary">
+    <!--用于访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 添加拨打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- ======================   相机   ========================== -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- ======================  麦克风  ========================== -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- ===================  修改音频设置  ===================-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- ====================== 读写数据权限 ====================== -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- ====================== 读取短信权限 ====================== -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- ====================== 读取手机号码（8.0以上） ====================== -->
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+
+    <!-- ============================ 指纹========================= -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <!-- ======================高德地图定位 开始========================== -->
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!--用于读取手机当前的状态 读取短信-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- ======================高德地图定位 end========================== -->
+
+    <!--如果是安卓8.0，应用编译配置的targetSdkVersion>=26，请务必添加以下权限  请求安装包apk-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <!--  腾讯Bugly读取日志权限  -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- ======================友盟 开始========================= -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--  广播  -->
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <!--  重新启动包  -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!--  得到的任务 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--  开机广播  -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--  获取网络状态  -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- ======================友盟 end========================== -->
+    <application>
+
+
+        <!-- 以下 为高德地图-->
+        <meta-data
+            android:name="{$name}"
+            android:value="{$value}"/>
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 以上 为高德地图-->
+
+        <!-- 文件提供者-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!--   日志保存服务     -->
+        <service android:name="com.xiayule.commonlibrary.logcat.SaveLogcatServer" />
+
+    </application>
+</manifest>

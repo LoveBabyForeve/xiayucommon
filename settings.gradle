@@ -1,0 +1,3 @@
+include ':xiayuCommon'
+include ':app'
+rootProject.name = "XiaYuCommom"

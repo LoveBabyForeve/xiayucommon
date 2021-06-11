@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainColor">#d43433</color>
+    <color name="mainColorH">#C80F1F</color>
+    <color name="stateBarColor">#00000000</color>
+
+    <color name="_24CFD6">#24cfd6</color>
+    <color name="_D03A28">#d03a28</color>
+    <color name="_FFFFFF">#FFFFFF</color>
+    <color name="_BFBFBF">#BFBFBF</color>
+    <color name="_333333">#333333</color>
+    <color name="_FF0000">#000000</color>
+    <color name="_000000">#00000000</color>
+    <color name="_5E0000">#5E000000</color>
+
+    <color name="_e0b775">#e0b775</color>
+    <color name="_24CED5">#24CED5</color>
+    <color name="_52FA8F">#52FA8F</color>
+    <color name="_CDCED0">#CDCED0</color>
+
+
+    <!--  手势解锁 开始  -->
+    <color name="point_color">#E6E6E6</color>
+    <color name="point_select_color">#E93D2F</color>
+    <color name="point_select_circle_color">#E93D2F</color>
+    <color name="error_point_select_color">#FF1000</color>
+    <color name="error_circle_color">#FF1300</color>
+    <!--  手势解锁 结束  -->
+
+</resources>
+

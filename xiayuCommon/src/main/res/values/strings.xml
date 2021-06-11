@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">commonlibrary</string>
+
+
+
+    <string name="please_storage_location_rationale">是否允许申请文件读写权限？</string>
+    <string name="please_read_phone_state">是否允许申请电话权限？</string>
+    <string name="please_permissions_camera">是否允许申请相机权限？</string>
+    <string name="please_permissions_audio">是否允许申请录音权限？</string>
+    <string name="please_permissions_coarse">是否允许申请网络定位权限？</string>
+    <string name="please_permissions_fine">是否允许申请GPS权限？</string>
+    <string name="please_permissions_phone">是否允许申请拨打电话权限？</string>
+
+    <string name="go_storage_location_rationale">在设置-应用-xxxxx-权限中开启存储空间权限</string>
+    <string name="go_please_read_phone_state">在设置-应用-xxxxx-权限中开启电话权限</string>
+    <string name="go_please_permissions_camera">在设置-应用-xxxxx-权限中开启相机权限</string>
+    <string name="go_please_permissions_audio">在设置-应用-xxxxx-权限中开启录音权限</string>
+    <string name="go_please_permissions_coarse">在设置-应用-xxxxx-权限中开启网络定位权限</string>
+    <string name="go_please_permissions_fine">在设置-应用-xxxxx-权限中开启GPS定位权限</string>
+    <string name="go_please_permissions_phone">在设置-应用-xxxxxs-权限中开启拨打电话权限</string>
+</resources>

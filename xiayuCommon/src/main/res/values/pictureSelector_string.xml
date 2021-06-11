@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="picture_cancel">取消</string>
+
+    <string name="picture_preview">预览</string>
+    <string name="picture_preview_num">预览(%1$d)</string>
+
+    <string name="picture_completed">已完成</string>
+    <string name="picture_please_select">请选择</string>
+
+    <string name="picture_original_image">原图</string>
+
+    <string name="picture_take_picture">拍摄</string>
+
+</resources>

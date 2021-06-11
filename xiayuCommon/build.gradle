@@ -1,0 +1,105 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.2.0'
+
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    // 解决使用 kotlin Java.lang.NoClassDefFoundError: Failed resolution of: Lkotlin/jvm/internal/Intrinsics解决方法
+    api 'com.mapzen:on-the-road:0.8.1'
+
+    // 权限申请管理 AndroidX 3.0.0   Android Support Library 2.0.1
+    api 'pub.devrel:easypermissions:3.0.0'
+
+    // 高德地图
+    api files('libs/AMap_Location_V4.9.0_20200228.jar')
+    // 腾讯X5
+    api files('libs/tbs_sdk_thirdapp_v4.3.0.67_43967_20200923.jar')
+//    api 'com.tencent.tbs.tbssdk:sdk:43939'
+    //DSBridge 支持X5内核 已经自己重写
+//    api 'com.github.wendux:DSBridge-Android:x5-3.0-SNAPSHOT'
+
+    //glide图片加载库
+    api 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    // 图片选择器
+    api 'com.github.LuckSiege.PictureSelector:picture_library:v2.6.1'
+    // 适配器
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    // 时间选择器、省市区三级联动
+    api 'com.contrarywind:Android-PickerView:4.1.9'
+    // banner轮播
+    api 'com.youth.banner:banner:2.1.0'
+
+    // Kongzue Dialog V3
+    api 'com.kongzue.dialog_v3x:dialog:3.2.1'
+//    api project(path: ':extraModule:dialogV3')
+
+    //network
+    //"okhttp"
+    api 'com.squareup.okhttp3:okhttp:3.11.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    // "retrofit"
+    api 'com.squareup.retrofit2:retrofit:2.4.0'
+    //  "converter-gson"
+    api 'com.squareup.retrofit2:converter-gson:2.4.0'
+    //"adapter-rxjava"
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+
+    //  "rxjava"
+    api "io.reactivex.rxjava2:rxjava:2.2.3"
+    // "rxandroid"
+    api "io.reactivex.rxjava2:rxandroid:2.1.0"
+
+    // 腾讯bugly
+    api 'com.tencent.bugly:crashreport:3.1.0'
+
+    // 检测内存泄漏
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+    // Optional, if you use support library fragments:
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.3'
+
+
+
+}
