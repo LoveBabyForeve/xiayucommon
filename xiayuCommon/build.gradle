@@ -1,13 +1,6 @@
 plugins {
     id 'com.android.library'
-    id 'com.github.dcendents.android-maven'
 }
-
-def siteUrl = 'https://github.com/LoveBabyForeve/xiayucommon'     //项目在github主页地址
-def gitUrl = 'https://github.com/LoveBabyForeve/xiayucommon.git'   //Git仓库的地址
-
-group = "com.LoveBabyForeve.xiayucommon"
-version = "1.0.0"
 
 
 android {
@@ -80,7 +73,7 @@ dependencies {
     api 'com.youth.banner:banner:2.1.0'
 
     // Kongzue Dialog V3
-    api 'com.kongzue.dialog_v3x:dialog:3.2.1'
+    api 'com.kongzue.dialog_v3x:dialog:3.2.5'
 //    api project(path: ':extraModule:dialogV3')
 
     //network
