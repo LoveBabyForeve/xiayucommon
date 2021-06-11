@@ -123,18 +123,6 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
     //----------------------------------------------------------------------------------------------------------------
 
     /**
-     * findViewById
-     *
-     * @param viewId 控件ID
-     * @param <T>    泛指
-     * @return 控件
-     */
-    public <T extends View> T getView(int viewId) {
-        View view = findViewById(viewId);
-        return (T) view;
-    }
-
-    /**
      * 通过Class跳转界面
      *
      * @param cls 所跳转的目的Activity类

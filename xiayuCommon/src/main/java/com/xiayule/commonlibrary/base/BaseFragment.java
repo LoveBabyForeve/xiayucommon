@@ -20,7 +20,7 @@ import androidx.fragment.app.Fragment;
  * @UpdateRemark: 更新说明
  * @Version: 1.0
  */
-public abstract class BaseFragment extends Fragment implements IBaseView{
+public abstract class BaseFragment extends Fragment implements IBaseView {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
