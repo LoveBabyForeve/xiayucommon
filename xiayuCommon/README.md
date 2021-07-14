@@ -21,6 +21,7 @@
 | adapter-rxjava"               | adapter-rxjava"          | api 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'                |
 | rxjava                        |                          | api "io.reactivex.rxjava2:rxjava:2.2.3"                           |
 | rxandroid                     |                          | api "io.reactivex.rxjava2:rxandroid:2.1.0"                        |
+| ucrop                         | 图片裁剪                  | api 'com.github.yalantis:ucrop:2.2.6'                             |
 
 ##使用方法：
 ```  java
@@ -32,6 +33,6 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.LoveBabyForeve:xiayucommon:1.0'
+    implementation 'com.github.LoveBabyForeve:xiayucommon:1.2'
 }
 ```
