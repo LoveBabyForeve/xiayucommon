@@ -1,4 +1,4 @@
-# xiayucommon
+## xiayucommon
 #公共库
 
 | 名称                          | 名称                      | 引用地址                                                          |
@@ -36,3 +36,16 @@ dependencies {
     implementation 'com.github.LoveBabyForeve:xiayucommon:1.2'
 }
 ```
+##新版Android studio 2020.3.1 使用方法
+#在settings.gradle中进行配置
+```  kotlin
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+
+
