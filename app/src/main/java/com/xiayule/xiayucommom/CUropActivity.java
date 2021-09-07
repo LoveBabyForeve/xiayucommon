@@ -11,6 +11,7 @@ import androidx.annotation.FloatRange;
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.xiayule.commonlibrary.base.BaseActivity;
@@ -96,7 +97,7 @@ public class CUropActivity extends BaseActivity {
 
         //uCrop.useSourceImageAspectRatio();
         //跳转裁剪页面
-        uCrop.start(activity, requestCode);
+        uCrop.start((AppCompatActivity) activity, requestCode);
         return cameraScalePath;
     }
 

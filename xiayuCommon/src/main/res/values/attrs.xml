@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
+    <!--  自定义图片   -->
     <declare-styleable name="NiceImageView">
-
         <attr name="is_circle" format="boolean" />
         <attr name="is_cover_src" format="boolean" />
         <attr name="corner_radius" format="dimension" />
@@ -16,9 +15,11 @@
         <attr name="inner_border_width" format="dimension" />
         <attr name="inner_border_color" format="color" />
         <attr name="mask_color" format="color" />
-
-
     </declare-styleable>
-
-
+    
+    
+    <declare-styleable name="PileLayout">
+        <attr name="PileLayout_vertivalSpace" format="dimension"/>
+        <attr name="PileLayout_pileWidth" format="dimension"/>
+    </declare-styleable>
 </resources>
