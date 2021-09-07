@@ -38,7 +38,7 @@ class MainActivity : BaseActivity() {
             for (i in 1..10) {
                 mutableList.add("https://cdn.pixabay.com/photo/2018/05/23/22/37/chinchillas-3425370_960_720.jpg")
             }
-            pileAvertView.setAvertImages(mutableList, 5)
+            pileAvertView.setAvertImages(mutableList, 3)
         }
     }
 }

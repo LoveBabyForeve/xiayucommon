@@ -47,6 +47,9 @@ public class PileAvertView extends LinearLayout {
     private void initView() {
         View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_group_pile_avert, this);
         mPileView = view.findViewById(R.id.pile_view);
+        mPileView.setFlag(false);
+        mPileView.setPileWidth(30f);
+        mPileView.setVertivalSpace(30f);
     }
 
     public void setAvertImages(List<String> imageList) {

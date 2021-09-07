@@ -78,60 +78,40 @@ public class PileView extends ViewGroup {
         int width = 0;
         int height = 0;
 
-        // 每一行的 宽 高
+        //每一行的，宽，高
         int lineWidth = 0;
         int lineHeight = 0;
-
-        int rawWidth = 0;//当前行总宽度
-        int rawHeight = 0;// 当前行高
-        int rowIndex = 0;//当前行位置
-
-
-        // 获取所有的子 View
-        int childCount = getChildCount();
-        for (int i = 0; i < childCount; i++) {
+        //获取所有的子view
+        int cCount = getChildCount();
+        for (int i = 0; i < cCount; i++) {
             View child = getChildAt(i);
-            if (child.getVisibility() == GONE) {
-                if (i == childCount - 1) {
-                    // 最后一个 child
-                    height += rawHeight;
-                    width = Math.max(width, rawWidth);
-                }
-                continue;
-            }
-
-            // 测量子view
-            measureChildWithMargins(child, widthMeasureSpec, 0, heightMeasureSpec, 0);
-            // 得到layoutparams
-            MarginLayoutParams layoutParams = (MarginLayoutParams) child.getLayoutParams();
-            int childWidth = child.getMeasuredWidth() + layoutParams.leftMargin + layoutParams.rightMargin;
-            int childHeight = child.getMeasuredHeight() + layoutParams.topMargin + layoutParams.bottomMargin;
-            if (lineWidth + childWidth - (rowIndex > 0 ? pileWidth : 0) > sizeWidth - getPaddingLeft() - getPaddingRight()) {
-                // 换行判断
-                height += lineHeight;
-                // 新的行高
+            //测量子view
+            measureChild(child, widthMeasureSpec, heightMeasureSpec);
+            //得到layoutparams
+            MarginLayoutParams lp = (MarginLayoutParams) child.getLayoutParams();
+            int childWidth = child.getMeasuredWidth() + lp.leftMargin + lp.rightMargin;
+            int childHeight = child.getMeasuredHeight() + lp.topMargin + lp.bottomMargin;
+            if (lineWidth + childWidth > sizeWidth - getPaddingLeft() - getPaddingRight()) {
+                //换行判断
+                height += lineHeight + vertivalSpace;
+                //新的行高
                 lineHeight = childHeight;
                 width = Math.max(width, lineWidth);
                 lineWidth = childWidth;
-                rowIndex = 0;
+
             } else {
                 lineWidth += childWidth;
-                if (rowIndex > 0) {
-                    rawWidth -= pileWidth;
-                }
                 lineHeight = Math.max(lineHeight, childHeight);
             }
 
-            if (i == childCount - 1) {
+            if (i == cCount - 1) {
                 width = Math.max(lineWidth, width);
-                lineHeight += lineHeight;
+                height += lineHeight;
             }
-
-            rowIndex++;
-
         }
-        setMeasuredDimension(modeWidth == MeasureSpec.EXACTLY ? sizeWidth : width + getPaddingLeft() + getPaddingRight(),
-                modeHeight == MeasureSpec.EXACTLY ? sizeHeight : height + getPaddingTop() + getPaddingBottom());
+
+        setMeasuredDimension(modeWidth == MeasureSpec.EXACTLY ? sizeWidth : width,
+                modeHeight == MeasureSpec.EXACTLY ? sizeHeight : height);
 
     }
 
@@ -146,6 +126,9 @@ public class PileView extends ViewGroup {
 
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        mAllViews.clear();
+        mLineHeight.clear();
+
         int width = getWidth();
         int lineWidth = 0;
         int lineHeight = 0;
@@ -161,7 +144,7 @@ public class PileView extends ViewGroup {
             MarginLayoutParams lp = (MarginLayoutParams) childView.getLayoutParams();
             // 如果加上当前子View的宽度后超过了ViewGroup的宽度，就换行
             if (childWidth + lineWidth + lp.leftMargin + lp.rightMargin > width - getPaddingRight() - getPaddingLeft()) {
-                mLineHeight.add(lineWidth);
+                mLineHeight.add(lineHeight);
                 mAllViews.add(lineViews);
                 lineViews = new ArrayList<>();
                 lineWidth = 0;
@@ -173,7 +156,7 @@ public class PileView extends ViewGroup {
         }
 
         // 处理最后一行
-        mLineHeight.add(lineWidth);
+        mLineHeight.add(lineHeight);
         mAllViews.add(lineViews);
 
 
@@ -208,9 +191,9 @@ public class PileView extends ViewGroup {
 
                 child.layout(lc, tc, rc, bc);
 
-                left += child.getMeasuredWidth() + lp.leftMargin + lp.rightMargin - pileWidth;
+                leftOffset += child.getMeasuredWidth() + lp.leftMargin + lp.rightMargin - pileWidth;
             }
-            topOffset = getPaddingLeft();
+            leftOffset = getPaddingLeft();
             topOffset += lineHeight;
         }
     }
