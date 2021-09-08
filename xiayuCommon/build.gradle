@@ -7,7 +7,7 @@ def siteUrl = 'https://github.com/LoveBabyForeve/xiayucommon'     //项目在git
 def gitUrl = 'https://github.com/LoveBabyForeve/xiayucommon.git'   //Git仓库的地址
 
 group = "com.LoveBabyForeve.xiayucommon"
-version = "1.3.4"
+version = "1.3.5"
 
 
 android {
@@ -17,8 +17,8 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 7
-        versionName '1.3.4'
+        versionCode 8
+        versionName '1.3.5'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
