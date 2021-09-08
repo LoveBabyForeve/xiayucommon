@@ -1,16 +1,10 @@
-package com.xiayule.xiayucommom;
+package com.xiayule.xiayucommon;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
 
-import androidx.annotation.ColorInt;
-import androidx.annotation.FloatRange;
-import androidx.annotation.IntRange;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 

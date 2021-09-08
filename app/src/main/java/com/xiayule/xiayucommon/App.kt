@@ -1,4 +1,4 @@
-package com.xiayule.xiayucommom
+package com.xiayule.xiayucommon
 
 import android.os.Process
 import android.text.TextUtils

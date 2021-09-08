@@ -1,4 +1,4 @@
-package com.xiayule.xiayucommom;
+package com.xiayule.xiayucommon;
 
 import org.junit.Test;
 

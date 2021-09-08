@@ -1,10 +1,14 @@
-package com.xiayule.xiayucommom
+package com.xiayule.xiayucommon
 
-import android.view.View
+import android.graphics.Color
+import android.icu.lang.UCharacter.GraphemeClusterBreak.L
+import android.os.Build
 import android.widget.Button
 import android.widget.ImageView
+import androidx.annotation.RequiresApi
 import com.xiayule.commonlibrary.base.BaseActivity
 import com.xiayule.commonlibrary.imageLoader.ImageLoaderProxy
+import com.xiayule.commonlibrary.utlis.StatusBarUtils
 import com.xiayule.commonlibrary.widget.NiceImageView
 
 class MainActivity : BaseActivity() {
@@ -18,7 +22,9 @@ class MainActivity : BaseActivity() {
         return R.layout.activity_main
     }
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun initView() {
+        StatusBarUtils.getInstance().transparencyBar(this, Color.TRANSPARENT)
         button = findViewById(R.id.button)
         imageView = findViewById(R.id.imageView)
         niceImageView = findViewById(R.id.niceImageView)
