@@ -1,7 +1,6 @@
-package com.xiayule.xiayucommon
+package com.xiayule.xiayucommom
 
 import android.graphics.Color
-import android.icu.lang.UCharacter.GraphemeClusterBreak.L
 import android.os.Build
 import android.widget.Button
 import android.widget.ImageView

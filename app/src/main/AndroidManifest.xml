@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xiayule.xiayucommon">
+    package="com.xiayule.xiayucommom">
 
     <application
-        android:name=".App"
+        android:name="com.xiayule.xiayucommom.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.XiaYuCommon.NoActionBar">
-        <activity android:name=".CUropActivity"></activity>
-        <activity android:name=".BlankActivity" />
+        android:theme="@style/Theme.XiaYuCommom.NoActionBar">
+        <activity android:name="com.xiayule.xiayucommom.CUropActivity"></activity>
+        <activity android:name="com.xiayule.xiayucommom.BlankActivity" />
         
-        <activity android:name=".MainActivity">
+        <activity android:name="com.xiayule.xiayucommom.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

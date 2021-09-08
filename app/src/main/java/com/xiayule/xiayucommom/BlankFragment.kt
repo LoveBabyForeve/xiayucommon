@@ -1,4 +1,4 @@
-package com.xiayule.xiayucommon
+package com.xiayule.xiayucommom
 
 import android.os.Bundle
 import android.view.LayoutInflater

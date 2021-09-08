@@ -1,4 +1,4 @@
-package com.xiayule.xiayucommon
+package com.xiayule.xiayucommom
 
 import com.xiayule.commonlibrary.base.BaseActivity
 
