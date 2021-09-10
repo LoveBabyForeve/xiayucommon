@@ -47,8 +47,12 @@ public class PileAvertView extends LinearLayout {
     private void initView() {
         View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_group_pile_avert, this);
         mPileView = view.findViewById(R.id.pile_view);
+        
+        // 设置 从左或者从右开始显示  false 表示从右边增加，true表示从左边增加
         mPileView.setFlag(false);
+        // 设置 重叠宽度
         mPileView.setPileWidth(30f);
+        // 设置 两个子控件之间的垂直间隙
         mPileView.setVertivalSpace(30f);
     }
 
@@ -56,6 +60,11 @@ public class PileAvertView extends LinearLayout {
         setAvertImages(imageList, VISIBLE_COUNT);
     }
 
+    /**
+     * 使用控件 设置图片 
+     * @param imageList 图片路径
+     * @param visibleCount 显示个的个数
+     */
     public void setAvertImages(List<String> imageList, int visibleCount) {
 //        List<String> visibleList = null;
 //        if (imageList.size() > visibleCount) {
