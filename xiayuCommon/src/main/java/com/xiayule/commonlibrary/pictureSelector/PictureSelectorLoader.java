@@ -31,7 +31,7 @@ public class PictureSelectorLoader {
 
 
     // 默认选择最大数量
-    public static final int MAX_NUMBER = 6;
+    public int mMaxNumber = 9;
 
     /**
      * 构造函数
@@ -92,7 +92,7 @@ public class PictureSelectorLoader {
                 .showCropGrid(true)// 是否显示裁剪矩形网格 圆形裁剪时建议设为false
                 .isOpenClickSound(true)// 是否开启点击声音
 
-                .maxSelectNum(MAX_NUMBER) // 最大图片选择数量
+                .maxSelectNum(mMaxNumber) // 最大图片选择数量
                 .forResult(PictureConfig.CHOOSE_REQUEST);
     }
 
@@ -124,7 +124,7 @@ public class PictureSelectorLoader {
                 .showCropGrid(true)// 是否显示裁剪矩形网格 圆形裁剪时建议设为false
                 .isOpenClickSound(true)// 是否开启点击声音
 
-                .maxSelectNum(MAX_NUMBER) // 最大图片选择数量
+                .maxSelectNum(mMaxNumber) // 最大图片选择数量
                 .forResult(PictureConfig.CHOOSE_REQUEST);
     }
 
@@ -156,7 +156,7 @@ public class PictureSelectorLoader {
                 .showCropGrid(true)// 是否显示裁剪矩形网格 圆形裁剪时建议设为false
                 .isOpenClickSound(true)// 是否开启点击声音
 
-                .maxSelectNum(MAX_NUMBER) // 最大图片选择数量
+                .maxSelectNum(mMaxNumber) // 最大图片选择数量
                 .forResult(PictureConfig.CHOOSE_REQUEST);
     }
 
@@ -188,7 +188,7 @@ public class PictureSelectorLoader {
                 .showCropGrid(true)// 是否显示裁剪矩形网格 圆形裁剪时建议设为false
                 .isOpenClickSound(true)// 是否开启点击声音
 
-                .maxSelectNum(MAX_NUMBER) // 最大图片选择数量
+                .maxSelectNum(mMaxNumber) // 最大图片选择数量
                 .forResult(PictureConfig.CHOOSE_REQUEST);
     }
 
@@ -227,5 +227,8 @@ public class PictureSelectorLoader {
                 .imageEngine(PictureSelectorEngine.getInstance()) // 请参考Demo GlideEngine.java
                 .openExternalPreview(position, mSelectList);
     }
+    
+    
+    // ================================ ==================================
 
 }

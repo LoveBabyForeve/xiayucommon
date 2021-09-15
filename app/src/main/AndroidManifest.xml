@@ -3,30 +3,29 @@
     package="com.xiayule.xiayucommom">
 
     <application
-        android:name="com.xiayule.xiayucommom.App"
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.XiaYuCommom.NoActionBar">
-        <activity android:name="com.xiayule.xiayucommom.CUropActivity"></activity>
-        <activity android:name="com.xiayule.xiayucommom.BlankActivity" />
-        
-        <activity android:name="com.xiayule.xiayucommom.MainActivity">
+        <activity
+            android:name=".pileavertview.PileAvertViewActivity"
+            android:exported="true" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Base.Theme.NoActionBar"
-            />
+            android:theme="@style/Base.Theme.NoActionBar" />
+        <activity android:name=".pictureselector.PictureSelectorActivity" />
+        <activity android:name=".CUropActivity" />
     </application>
 
 </manifest>

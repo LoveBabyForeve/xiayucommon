@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/activity_curop.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/activity_picture_selector.xml" value="0.24444444444444444" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/activity_pile_avert_view.xml" value="0.3458333333333333" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/blank_activity.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/blank_fragment2_fragment.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/fragment_blank.xml" value="0.3609375" />
         <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/item_group_round_avert.xml" value="0.3609375" />
         <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/layout_group_pile_avert.xml" value="0.3609375" />
       </map>

@@ -5,17 +5,18 @@ import android.os.Build
 import android.widget.Button
 import android.widget.ImageView
 import androidx.annotation.RequiresApi
+import com.luck.picture.lib.PictureSelectorActivity
 import com.xiayule.commonlibrary.base.BaseActivity
 import com.xiayule.commonlibrary.imageLoader.ImageLoaderProxy
 import com.xiayule.commonlibrary.utlis.StatusBarUtils
-import com.xiayule.commonlibrary.widget.NiceImageView
+import com.xiayule.xiayucommom.pileavertview.PileAvertViewActivity
 
 class MainActivity : BaseActivity() {
 
     lateinit var button: Button
+    lateinit var button3: Button
+    lateinit var button4: Button
     lateinit var imageView: ImageView
-    lateinit var niceImageView: NiceImageView
-    lateinit var pileAvertView: PileAvertView
 
     override fun initContentView(): Int {
         return R.layout.activity_main
@@ -25,25 +26,27 @@ class MainActivity : BaseActivity() {
     override fun initView() {
         StatusBarUtils.getInstance().transparencyBar(this, Color.TRANSPARENT)
         button = findViewById(R.id.button)
+        button3 = findViewById(R.id.button3)
+        button4 = findViewById(R.id.button4)
         imageView = findViewById(R.id.imageView)
-        niceImageView = findViewById(R.id.niceImageView)
-        pileAvertView = findViewById(R.id.pileAvertView)
 
-        ImageLoaderProxy.getInstance().displayImages("https://cdn.pixabay.com/photo/2018/05/23/22/37/chinchillas-3425370_960_720.jpg", imageView)
-        ImageLoaderProxy.getInstance().displayImages("https://cdn.pixabay.com/photo/2018/05/23/22/37/chinchillas-3425370_960_720.jpg",niceImageView)
+        ImageLoaderProxy.getInstance().displayImages(
+            "https://cdn.pixabay.com/photo/2018/05/23/22/37/chinchillas-3425370_960_720.jpg",
+            imageView
+        )
 
-       
     }
 
     override fun initListener() {
         button.setOnClickListener {
-//            startActivity(BlankActivity().javaClass)
+            startActivity(PileAvertViewActivity().javaClass)
+        }
 
-            val mutableList: MutableList<String> = mutableListOf()
-            for (i in 1..10) {
-                mutableList.add("https://cdn.pixabay.com/photo/2018/05/23/22/37/chinchillas-3425370_960_720.jpg")
-            }
-            pileAvertView.setAvertImages(mutableList, 3)
+        button3.setOnClickListener {
+            startActivity(CUropActivity().javaClass)
+        }
+        button4.setOnClickListener {
+            startActivity(PictureSelectorActivity().javaClass)
         }
     }
 }
