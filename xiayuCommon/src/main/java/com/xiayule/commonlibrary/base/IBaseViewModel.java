@@ -63,7 +63,7 @@ public interface IBaseViewModel extends LifecycleObserver {
      * An {@link Lifecycle.Event Event} constant that can be used to match all events.
      */
     @OnLifecycleEvent(Lifecycle.Event.ON_ANY)
-    void onAny();
+    void onAny(LifecycleOwner owner, Lifecycle.Event event);
 
     /**
      * 注册RxBus

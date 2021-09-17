@@ -1,9 +1,12 @@
 package com.xiayule.commonlibrary.base;
 
 import android.app.Application;
+import android.content.Context;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleOwner;
 
 /**
  * @Description: java类作用描述
@@ -15,13 +18,17 @@ import androidx.lifecycle.AndroidViewModel;
  * @Version: 1.0
  */
 public class BaseViewModel extends AndroidViewModel implements IBaseViewModel {
+
+    private Context mContext;
+
     public BaseViewModel(@NonNull Application application) {
         super(application);
+        mContext = application;
     }
 
     @Override
     public void onCreate() {
-
+        registerRxBus();
     }
 
     @Override
@@ -46,19 +53,25 @@ public class BaseViewModel extends AndroidViewModel implements IBaseViewModel {
 
     @Override
     public void onDestroy() {
-
+        removeRxBus();
     }
 
     @Override
-    public void onAny() {
+    public void onAny(LifecycleOwner owner, Lifecycle.Event event) {
 
     }
 
+    /**
+     * 注册RxBus事件
+     */
     @Override
     public void registerRxBus() {
 
     }
 
+    /**
+     * 移除RxBus
+     */
     @Override
     public void removeRxBus() {
 
