@@ -201,7 +201,7 @@ public class PictureSelectorLoader {
      */
     public void preview(Activity activity, int position, List<LocalMedia> mSelectList) {
         PictureSelector.create(activity)
-                .themeStyle(R.style.picture_default_style)
+                .themeStyle(com.luck.picture.lib.R.style.picture_default_style)
 
                 .setPictureStyle(PictureSelectorStyle.getInstance().initPictureUIParam())// 动态自定义相册主题
 
@@ -219,7 +219,7 @@ public class PictureSelectorLoader {
      */
     public void preview(Fragment fragment, int position, List<LocalMedia> mSelectList) {
         PictureSelector.create(fragment)
-                .themeStyle(R.style.picture_default_style)
+                .themeStyle(com.luck.picture.lib.R.style.picture_default_style)
 
                 .setPictureStyle(PictureSelectorStyle.getInstance().initPictureUIParam())// 动态自定义相册主题
 

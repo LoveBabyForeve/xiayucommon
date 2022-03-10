@@ -132,6 +132,20 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
     }
 
     /**
+     * 通过Class跳转界面
+     *
+     * @param cls 所跳转的目的Activity类
+     * @param flags @Flags  Intent.FLAG_ACTIVITY_LAUNGH_ADJACENT
+     *                      Intent.FLAG_ACTIVITY_NEW_TASK
+     **/
+    public void startActivity(Class<?> cls, int flags) {
+        Intent intent = new Intent();
+        intent.setClass(this, cls);
+        intent.setFlags(flags);
+        startActivity(intent);
+    }
+
+    /**
      * 含有Bundle通过Class跳转界面
      *
      * @param cls    所跳转的目的Activity类
@@ -164,8 +178,7 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
      * @param bundle      跳转所携带的信息
      * @param requestCode 请求 返回标识
      **/
-    public void startActivityForResult(Class<?> cls, Bundle bundle,
-                                       int requestCode) {
+    public void startActivityForResult(Class<?> cls, Bundle bundle, int requestCode) {
         Intent intent = new Intent();
         intent.setClass(this, cls);
         if (bundle != null) {

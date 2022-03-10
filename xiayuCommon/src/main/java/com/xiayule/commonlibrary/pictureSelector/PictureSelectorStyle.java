@@ -42,7 +42,7 @@ public class PictureSelectorStyle {
      */
     public PictureWindowAnimationStyle initOpenWindowAnimat() {
 
-        return PictureWindowAnimationStyle.ofCustomWindowAnimationStyle(R.anim.picture_anim_up_in, R.anim.picture_anim_down_out);
+        return PictureWindowAnimationStyle.ofCustomWindowAnimationStyle(com.luck.picture.lib.R.anim.picture_anim_up_in, com.luck.picture.lib.R.anim.picture_anim_down_out);
 
     }
 
