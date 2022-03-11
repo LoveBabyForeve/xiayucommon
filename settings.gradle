@@ -1,3 +1,4 @@
 rootProject.name = "XiaYuCommom"
 include ':app'
 include ':xiayuCommon'
+include ':speechDemo'

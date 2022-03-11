@@ -1,11 +1,11 @@
-package com.xiayule.xiayucommom.pileavertview;
+package com.xiayule.xiayucommom.ui.pileavertview;
 
 import androidx.lifecycle.MutableLiveData;
 
 import com.xiayule.commonlibrary.base.BaseActivity;
 import com.xiayule.commonlibrary.imageLoader.ImageLoaderProxy;
 import com.xiayule.commonlibrary.widget.NiceImageView;
-import com.xiayule.xiayucommom.PileAvertView;
+import com.xiayule.xiayucommom.ui.PileView.PileAvertView;
 import com.xiayule.xiayucommom.R;
 
 import java.util.ArrayList;

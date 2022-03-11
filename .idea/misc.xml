@@ -3,15 +3,45 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.272" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/drawable/ic_launcher_background.xml" value="0.272" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/drawable/icon_collect.xml" value="0.2615" />
         <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/activity_curop.xml" value="0.3609375" />
-        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/activity_main2.xml" value="0.25" />
         <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/activity_picture_selector.xml" value="0.24444444444444444" />
         <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/activity_pile_avert_view.xml" value="0.3458333333333333" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/activity_toast.xml" value="0.3609375" />
         <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/blank_activity.xml" value="0.3609375" />
         <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/blank_fragment2_fragment.xml" value="0.3609375" />
         <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/fragment_blank.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/fragment_dashboard.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/fragment_home.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/fragment_notifications.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/fragment_picture_selector.xml" value="0.3609375" />
         <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/item_group_round_avert.xml" value="0.3609375" />
         <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/layout/layout_group_pile_avert.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/drawable/list_bg_color.xml" value="0.269" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/activity_face_identify.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/activity_group_manager.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/activity_result_identify.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/group_header_layout.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/iatdemo.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/ifly_layout_mnotice_image.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/isedemo.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/isrdemo.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/isvdemo.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/item_group.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/item_identify_result.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/list_items.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/main.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/online_facedemo.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/title.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/ttsdemo.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/layout/understander.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/xml/iat_setting.xml" value="0.3609375" />
+        <entry key="..\:/project/android/XiaYuCommom/speechDemo/src/main/res/xml/url_setting.xml" value="0.3609375" />
       </map>
     </option>
   </component>

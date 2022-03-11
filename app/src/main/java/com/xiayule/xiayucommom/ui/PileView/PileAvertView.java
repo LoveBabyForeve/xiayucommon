@@ -1,4 +1,4 @@
-package com.xiayule.xiayucommom;
+package com.xiayule.xiayucommom.ui.PileView;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import com.xiayule.commonlibrary.imageLoader.ImageLoaderProxy;
 import com.xiayule.commonlibrary.widget.NiceImageView;
 import com.xiayule.commonlibrary.widget.PileView;
+import com.xiayule.xiayucommom.R;
 
 import java.util.List;
 

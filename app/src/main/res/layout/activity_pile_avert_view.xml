@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pileavertview.PileAvertViewActivity">
+    tools:context=".ui.pileavertview.PileAvertViewActivity">
 
     <com.xiayule.commonlibrary.widget.NiceImageView
         android:id="@+id/niceImageView"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_background" />
 
-    <com.xiayule.xiayucommom.PileAvertView
+    <com.xiayule.xiayucommom.ui.PileView.PileAvertView
         android:id="@+id/pileAvertView"
         android:layout_width="match_parent"
         android:layout_height="330dp"

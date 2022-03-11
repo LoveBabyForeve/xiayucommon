@@ -1,4 +1,4 @@
-package com.xiayule.xiayucommom.pictureselector;
+package com.xiayule.xiayucommom.ui.picture;
 
 import android.os.Bundle;
 

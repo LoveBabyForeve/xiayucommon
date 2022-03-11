@@ -1,4 +1,4 @@
-package com.xiayule.xiayucommom;
+package com.xiayule.xiayucommom.ui.CUrop;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.xiayule.commonlibrary.base.BaseActivity;
+import com.xiayule.xiayucommom.R;
 import com.yalantis.ucrop.UCrop;
 import com.yalantis.ucrop.UCropActivity;
 
