@@ -19,25 +19,43 @@
             android:name=".MainActivity2"
             android:exported="true"
             android:label="@string/title_activity_main2" />
+
         <activity
             android:name=".ui.huaweitoast.ToastActivity"
-            android:exported="false" />
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:exported="false"
+            android:resizeableActivity="true">
+            <layout
+                android:defaultWidth="600dp"
+                android:defaultHeight="500dp"
+                android:gravity="top|end"
+                android:minimalWidth="300dp"
+                android:minmalHeight="450dp" />
+        </activity>
+
         <activity
             android:name=".ui.pileavertview.PileAvertViewActivity"
             android:exported="true" />
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity android:name=".ui.picture.PictureSelectorActivity" />
+
+        <activity android:name=".ui.CUrop.CUropActivity" />
+
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.NoActionBar" />
-        <activity android:name=".ui.picture.PictureSelectorActivity" />
-        <activity android:name=".ui.CUrop.CUropActivity" />
     </application>
 
 </manifest>

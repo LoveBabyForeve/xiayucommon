@@ -4,11 +4,13 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Environment;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.xiayule.commonlibrary.base.BaseActivity;
+import com.xiayule.commonlibrary.utlis.ToastUtils;
 import com.xiayule.xiayucommom.R;
 import com.yalantis.ucrop.UCrop;
 import com.yalantis.ucrop.UCropActivity;
@@ -31,11 +33,15 @@ public class CUropActivity extends BaseActivity {
     @Override
     public void initListener() {
 
-        findViewById(R.id.bt_curop).setOnClickListener(v -> {
-            UCrop.of(sourceUri, destinationUri)
-                    .withAspectRatio(16, 9)
-                    .withMaxResultSize(320, 180)
-                    .start(this);
+        findViewById(R.id.bt_curop).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ToastUtils.showLong("点击了");
+                UCrop.of(sourceUri, destinationUri)
+                        .withAspectRatio(16, 9)
+                        .withMaxResultSize(320, 180)
+                        .start(CUropActivity.this);
+            }
         });
     }
 

@@ -69,9 +69,7 @@ class MainActivity : BaseActivity() {
         }
 
         button7.setOnClickListener {
-            startActivity( MainActivity2().javaClass,
-                Intent.FLAG_ACTIVITY_LAUNCH_ADJACENT or Intent.FLAG_ACTIVITY_NEW_TASK
-            )
+            startActivity(MainActivity2().javaClass)
         }
     }
 }
